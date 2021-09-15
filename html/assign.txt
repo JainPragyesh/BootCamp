@@ -1,0 +1,51 @@
+Question 1:
+	How are inline and block elements different from each other?
+
+Block Elements-
+: A block element always starts on a new line.
+: It has a top and a bottom margin
+Ex- <div>, <h1>-<h6>, <Header>, <Table> , etc.
+Inline elements-
+: An inline element does not start on a new line.
+: And it does not have top and bottom margin.
+Ex-  <a>, <b>, <i>, <br>, etc.
+
+
+Question 2:
+	Explain the difference between visibility:hidden and display:none
+
+Visibility:Hidden-
+:When you use visibility:hidden; , It means that the tag in question will not appear on the page at all.
+:And, There will be no space allocated for it between the other tags. 
+
+:Display:None-
+: When you use display: none;, however, the element is completely removed from the document    layout. This means you can't tell that there is an invisible element on the page. The document is rendered like the element doesn't even exist.
+
+
+Question 3:
+	Explain the clear and float properties.
+Float :
+The float properties is used for positioning and formatting contents.
+Ex. : the notification text is moving from left to right.
+Float Properties : Left, right, none, inherit.
+
+Left    : Float to the left of its content.
+Right  : Float to the right of its content.
+None  : The element does not float.
+Inherit : The element get the propertied form its parent.
+
+Clear :
+The clear measures the action to be happen with the element next to floating element.
+
+Clear properties :
+Left : Element is pushed below left floating element.
+Right : Element is pushed below right floating element.
+Both : Element is pushed below both left and right.
+Inherit : Element inherit the clear value from its parent.
+
+
+Question 4:
+Explain difference between absolute, relative,fixed and static. 
+
+
+
