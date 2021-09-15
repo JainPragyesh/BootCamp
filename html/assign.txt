@@ -15,29 +15,29 @@ Question 2:
 	Explain the difference between visibility:hidden and display:none
 
 Visibility:Hidden-
-:When you use visibility:hidden; , It means that the tag in question will not appear on the page at all.
-:And, There will be no space allocated for it between the other tags. 
+: When you use visibility:hidden; , It means that the tag in question will not appear on the page at all.
+: And, There will be no space allocated for it between the other tags. 
 
-:Display:None-
-: When you use display: none;, however, the element is completely removed from the document    layout. This means you can't tell that there is an invisible element on the page. The document is rendered like the element doesn't even exist.
+Display:None-
+: When you use display: none;, however, the element is completely removed from the document layout. This means you can't tell that there is an invisible element on the page. The document is rendered like the element doesn't even exist.
 
 
 Question 3:
 	Explain the clear and float properties.
-Float :
-The float properties is used for positioning and formatting contents.
+Float -
+: The float properties is used for positioning and formatting contents.
 Ex. : the notification text is moving from left to right.
-Float Properties : Left, right, none, inherit.
+: Float Properties : Left, right, none, inherit.
 
 Left    : Float to the left of its content.
 Right  : Float to the right of its content.
 None  : The element does not float.
 Inherit : The element get the propertied form its parent.
 
-Clear :
-The clear measures the action to be happen with the element next to floating element.
+Clear -
+:The clear measures the action to be happen with the element next to floating element.
 
-Clear properties :
+Clear properties -
 Left : Element is pushed below left floating element.
 Right : Element is pushed below right floating element.
 Both : Element is pushed below both left and right.
@@ -45,7 +45,73 @@ Inherit : Element inherit the clear value from its parent.
 
 
 Question 4:
-Explain difference between absolute, relative,fixed and static. 
+	Explain difference between absolute, relative,fixed and static. 
+
+Absolute: Element is postioned related to the nearest postioned ancestor.
+Relative: Element is postioned related to its normal postion.
+Fixed   : Element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+Static  : Element is not positioned in any special way. It postioned according to the normal flow.
 
 
+Question 5:
+	Write the HTML code to create a table in which there are 4 columns( ID , Employee Name, Designation, Department) and at least 6 rows. Also do some styling to it.
+ 
+ Soution in html file "Question_5.html"
+ 
+ 
+ Question 6:
+ 	Why do we use meta tags?
+ 
+: Meta tag is used to define metadata about an html document.
+: Meta always use within <head> element and used to nspecify the character set, keywords, etc.
+: Metadata will not be displayed on the page , Is is machine pharsable.
 
+
+Question 7:
+	Explain box model.
+	
+: It is a box that wraps around every html element. 
+: It consists of margin, borders, padding and actual content.
+
+Content: The content of the box, where text and images appear.
+Padding: Clears an area around the content. The padding is transparent
+Border : A border that goes around the padding and content
+Margin : Clears an area outside the border. The margin is transparent
+
+Question 8:
+	 What are the different types of CSS Selectors? 
+
+: Css selectors are used to select the content you want to style.
+: Css selectors select HTML elements acc. to its id, class, type, etc
+
+: Elements Selectors:Element selector slects the html element by name. Ex. p, table, div, etc can be used directly.
+
+
+Question 9:
+	Define Doctype.
+	
+: All HTML documents must start with a <!DOCTYPE> declaration.
+: The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+: In HTML 5, the declaration is simple: <!DOCTYPE html>
+
+
+Question 10:
+	Explain 5 HTML5 semantic tags.
+
+Article :	
+: The <article> element specifies independent, self-contained content.
+: An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+
+Header :
+: The <header> element represents a container for introductory content or a set of navigational links.
+: A <header> element typically contains:
+: one or more heading elements (<h1> - <h6>)
+
+Footer :
+: The footer element defines a footer for a document or section
+
+Aside :
+:The Aside element defines some content aside from the content it is placed in. (like a sidebar).
+
+Section :
+: The <section> element defines a section in a document.
