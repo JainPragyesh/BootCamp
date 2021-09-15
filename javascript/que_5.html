@@ -1,0 +1,57 @@
+<!-- create a list of objects of Employee with info as follow :
+-Name, age, salary ,DOB
+-filter all employees with salary greater than 5000
+-group employee on the basis of their age
+-fetch employees with salary less than 1000 and age greater than 20.
+Then give them an increment 5 times their salary.  -->
+
+<html>
+<body>
+<script>
+let employeeList = [{"Name": "Raman", "Age":24, "Salary": 20000, "DOB": "05-04-1997"},
+		     {"Name": "Aman", "Age":23, "Salary": 200, "DOB": "02-04-1998"},
+		     {"Name": "Ram", "Age":22, "Salary": 20000, "DOB": "20-06-1999"},
+		     {"Name": "Sohan", "Age":24, "Salary": 25000, "DOB": "05-08-1997"},
+		     {"Name": "Rohan", "Age":23, "Salary": 29000, "DOB": "05-05-1998"}];
+console.log("Employee List");
+console.log(employeeList);
+let filterBySal = employeeList.filter(function(e)
+ {
+ return(e.Salary>5000);
+ }
+ 
+);
+
+console.log("Employees Name having salary greater than 5000");
+for (let i = 0; i < filterBySal.length; i++)
+{
+   console.log(filterBySal[i].Name);
+}
+
+let groupBy = (array, key) => {
+      return array.reduce((result, obj) => {
+         (result[obj[key]] = result[obj[key]] || []).push(obj);
+         return result;
+      }, {});
+   };
+   
+let groupByAge = groupBy(employeeList, "Age");
+console.log("Employees Name grouped by age");
+console.log(groupByAge);
+
+
+
+employeeList.forEach(function(e)
+ {
+ 	if(e.Salary<1000&&e.Age>20)	
+ 	  e.Salary= 5*e.Salary;
+ });
+ 
+console.log("Employees with modeified salary for the one having salary < 1000 and Age > 20");
+console.log("Only Aman salary was < 1000 i.e. 200 and age> 20 and now it is 1000");
+console.log(employeeList);
+
+
+</script>
+</body>
+</html>
