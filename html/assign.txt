@@ -87,6 +87,7 @@ Question 8:
 : Elements Selectors:Element selector slects the html element by name. Ex. p, table, div, etc can be used directly.
 
 
+
 Question 9:
 	Define Doctype.
 	
