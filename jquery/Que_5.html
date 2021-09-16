@@ -1,0 +1,22 @@
+<!-- Change the font size of ".target" which has parent element with id name "#main" -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#main > .target").css({"font-size": "25px"});
+});
+</script>
+</head>
+
+<body>
+  <div id="main">   
+    <p class="first"> Hello World </p>
+    <p class="target"> This is target paragraph.  </p>
+
+  </div>
+</body>
+
+</html>

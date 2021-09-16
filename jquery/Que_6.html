@@ -1,4 +1,4 @@
-<!-- Console "Hello Word" in document.ready function -->
+<!-- After page load change the HTML of div element with "p" element -->
 
 <!DOCTYPE html>
 <html>
@@ -6,12 +6,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
- console.log("Hello World")
+    $("div").html("Changes After pageloaded");
 });
 </script>
 </head>
 <body>
+<h1>Made Change</h1>
+<div>Before Changes</div>
 
 </body>
 </html>
-

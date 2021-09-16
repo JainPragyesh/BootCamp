@@ -1,0 +1,29 @@
+<!-- Get dropdown selected value on onchanage event and append in div container -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+	
+$(document).ready(function() {
+            $("#b1").click(function(){      
+               var a = $("#myColors option:selected").text();
+               $("div").append(a);
+            });
+         });
+</script>
+</head>
+<body>
+<p>List of Colors :</p>
+<select id='myColors'>
+<option value="Red">Red</option>
+<option value="Green">Green</option>
+<option value="White">White</option>
+ <option value="Black">Black</option>
+ </select><br><br>
+ <button id="b1">Select Color</button><br><br>
+ <div>Choose color : <br> </div>
+ </body>
+ </html>

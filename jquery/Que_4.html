@@ -1,4 +1,4 @@
-<!-- Select a ID name "#test" and add class "load" when DOM is loaded -->
+<!-- Disable submit button using jquery attr method -->
 
 <!DOCTYPE html>
 <html>
@@ -6,10 +6,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#a1").addClass("intro");
-  });
-});
+  $('#a1').attr("disabled", false);
+
 </script>
 <style>
 .intro {
@@ -23,7 +21,7 @@ $(document).ready(function(){
 <h1>Add class Load</h1>
 
 <p id="a1">This is a paragraph.</p>
-<button>click to add a class</button>
+<button id="a1">click to add a class</button>
 
 </body>
 </html>

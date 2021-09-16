@@ -1,0 +1,24 @@
+<!-- On clicking on "google" tag. It is taking us to google home page. Stop it from happening. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+	
+$(document).ready(function() {
+    
+	​$("l1.click(function()
+{
+     return ($(this).attr('disabled')) ? false : true;
+});
+
+});
+</script>
+</head>
+<body>
+<h1>Stop event on link</h1>
+On clicking on <a href="https://www.google.com" id="l1">Google</a> tag. Stop it...
+ </body>
+ </html>
