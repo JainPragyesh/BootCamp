@@ -1,0 +1,35 @@
+<!-- Chagne color of every cell which has numberl larger than 10. -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		
+		<table id="table1" border="2">
+			<tr><td>10</td><td>13</td><td>13</td></tr>
+			<tr><td>7</td><td>8</td><td>12</td></tr>
+			<tr><td>11</td><td>9</td><td>8</td></tr>
+		</table>
+		
+		<script type="text/javascript">
+			
+			$(function() {
+				
+				$("#table1 td").each(function() {
+    				
+    				if ($(this).text() > 10) {
+      				
+      					$(this).css('color', 'red');
+      					$(this).css('background-color', 'green');
+    				
+    				}
+  				});
+			});
+		</script>
+		
+	</body>
+</html>

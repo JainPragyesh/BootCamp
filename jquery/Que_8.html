@@ -1,0 +1,24 @@
+<!-- Click event not working on element which added dynamicly or via script, make it work using .on method -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function appendText() {
+   var txt1 = $("<button></button>").text("Click Me.");    
+  $("div").append(txt1);   // Append new elements
+};
+
+$(document).ready(function () {
+	$('div').on('click', function() {
+     $("div").append($("<p></p>").text("Dynamic button was clicked and click action was executed using on function."));
+  });
+});
+</script>
+</head>
+<body>
+<button onclick="appendText()">Append Dynamic Element</button>
+<div></div>
+</body>
+</html>

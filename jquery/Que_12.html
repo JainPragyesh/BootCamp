@@ -1,0 +1,33 @@
+<!-- We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li -->
+
+<html>
+	<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<script>
+
+    		$(document).ready(function () {
+
+                $("#child").click(function() {
+                    $('#parent').click(function () {
+                        return false;
+                    });
+                });
+    		});
+
+    	</script>
+        <h1>Welcome To Google</h1>
+    
+        <div id="parent">
+
+        <a href="https://www.google.com/" >Click on Google 
+        </a><br><br>
+        <button id="child">Stop parent class Link from working
+        </button>
+
+    </div>
+
+	</body>
+</html>

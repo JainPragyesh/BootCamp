@@ -1,0 +1,52 @@
+<!-- Get the max height of elements using jquery each method 
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<script>
+			
+			$(document).ready(function () {
+
+			    $(".example").each(function () {
+
+			        var pheight = $(this).find(".desc p").height();
+			        var h2height = $(this).find(".desc h2").height();
+
+			        $(this).find(".desc").height(670 - pheight - h2height - 30);
+
+			        
+			        console.log(pheight);
+			        console.log(h2height);
+			    });
+
+			});
+
+	   </script>
+
+<div class="container">
+    <div class="example">
+        <div class="desc">
+             <h2>This is a title of a post and it can span 2 lines</h2>
+
+            <p>TO THE NEW is a digital technology firm providing digital transformation and product engineering services to ISVs, Consumer Internet, and large enterprises across the globe. We design & build digital platforms and products with Cloud and Data at the focal point.</p>
+        </div>
+    </div>
+    <div class="example">
+        <div class="desc">
+             <h2>This is a title of a post and it can span 2 lines</h2>
+
+            <p>LTO THE NEW is recognized by global analyst firms like Gartner, Everest, ISG, and Zinnov for our capabilities in digital engineering, Cloud, Data & Analytics. The company also leverages its deep partnership with all the leading hyperscalers like AWS (Premier Partner), Azure, and GCP to provide end-to-end Cloud professional and managed services to our customers.</p>
+        </div>
+    </div>
+</div>
+
+
+	</body>
+</html>

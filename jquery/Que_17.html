@@ -1,0 +1,50 @@
+<!-- Create a image array and in div create a slide show to animate images of delay of 500ms. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+.slideshow{
+    float : left;
+    width : 200px;
+    height: 200px;
+    position : relative;
+    margin : 10px;
+}
+
+.images img {
+    position : absolute;
+    top : 0;
+}
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		</script>
+
+	</head>
+	<body>
+		<script>
+			function anim(selector) {
+			    $(".images img", selector).first().appendTo($('.images', selector)).fadeOut(500);	
+			    $(".images img", selector).first().fadeIn(500);
+			}
+
+	// Untuk delay gambarnya
+	var i = 0, max = 4;
+	var interval = setInterval(function(){
+	    $(".slideshow").each(function() {anim(this)});
+	    i += 1;
+	    if(i >= max) { i = 0; }
+	}, 1000);
+
+		</script>
+		<div class="slideshow">
+   			<div class="images">
+     			<img src="1.jpeg" height="200" width="200">
+     			<img src="2.jpeg" height="200" width="200">
+     			<img src="3.jpeg" height="200" width="200">
+     			<img src="5.jpeg" height="200" width="200">
+   			</div> 
+   		</div>
+	</body>
+</html>
