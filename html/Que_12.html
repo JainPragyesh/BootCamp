@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.div{
+			color: #33FF9C;
+		}
+		a{
+			color: #33ff9c;
+	  		text-decoration: none;
+			display: inline-block;
+		}
+		input[type=text] {
+			width: 95%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+  			margin-left: 10px;
+  			margin-right: 10px;
+		}
+		.select{
+			width: 95%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+  			margin-left: 10px;
+  			margin-right: 10px;
+  			background-color: #33FF9C;
+		}
+		input[type=submit] {
+  			width: 20%;
+  			float: right;
+  			background-color: #4CAF50;
+  			color: white;
+  			padding: 14px 20px;
+  			margin: 5px 0;
+  			border: 1px solid #b3b3b3a;
+  			border-radius: 4px;
+  			cursor: pointer;
+  			margin-right: 10px;
+		}
+
+		input[type=submit]:hover {
+  			background-color: #45a049;
+		}
+
+		 .footerdiv{
+  			border: 2px solid #b3b3b3;
+  			margin-left: 300px;
+  			margin-right: 300px;
+  			padding-top: 10px;
+  			padding-bottom: 60px;
+		}
+		.title{
+			background-color: #a6a6a6;
+			color:white;
+			padding-top: 10px;
+			padding-right: 555px;
+			padding-bottom: 15px;
+			padding-left: 11px;
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+		.label{
+			margin-left: 10px;
+		}
+		textarea{
+			line-height: 2em;
+			width: 95%;
+			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+			margin-left: 10px;
+  			margin-right: 10px;
+  			box-sizing: border-box;
+		}
+		#version{
+			width: 45%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+  			margin-left: 10px;
+  			margin-right: 10px;
+		}
+		#myfile{
+			width: 100%;
+			display: inline-block;
+			margin-left: 10px;
+  			margin-right: 10px;
+  			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align:left; font-size: 40px;padding-left: 35px;" class="div">
+    	<b>&nbsp&nbsp &nbsp&nbsp To The New</b>
+    	<span style="float:right; font-size: 20px;padding-right: 40px;text-decoration: none; display: inline-block;">
+        	<a href="https://www.tothenew.com">Home</a>
+	    	&nbsp&nbsp&nbsp
+	    	<a href="https://www.tothenew.com/contact-us">Quick Help</a>&nbsp&nbsp&nbsp&nbsp
+    	</span>
+	    	<hr style="margin-left:35px; margin-right:40px;">
+    </div>		
+
+	<div class="footerdiv">
+  		<form action="/action_page.php">
+  		<label class="title">Bug Report</label>
+  		<br/><br/>	
+    	<label class="label">Title:*</label>
+    	<br/>
+    	<input type="text" name="title">
+    	<br/>
+	    <label class="label">Description:*</label>
+	    <br/>
+    	<textarea id="textarea"></textarea>
+    	<br/>
+    	<label class="label">Operating system</label>
+    	<select class="select" name="os" va>
+      	<option value="Windows">Windows XP</option>
+      	<option value="linux">Linux</option>
+    	</select>	
+    	<br/>
+    	<label class="label">Product*</label>
+    	<select class="select" name="product" va>
+      	<option value="Formhold">Formhold</option>
+      	<option value="linux">Linux</option>
+    	</select>
+    	<br/>	
+    	<label class="label">Version:*</label>
+    	<br/>
+    	<input type="text" id="version" name="version">
+    	<br/>	
+    	<label class="label">License:</label>
+    	<br/>
+    	&nbsp;&nbsp;&nbsp;
+    	<input type="radio" value="Free">
+  		<label for="html">Free</label>
+		&nbsp;&nbsp;&nbsp;
+  		<input type="radio" value="Business">
+  		<label for="css">Business</label><br>
+		<br/>
+    	<label class="label">Severity*</label>
+    	<select class="select" name="severity" va>
+      	<option value="Critical">Critical</option>
+      	<option value="Normal">Normal</option>
+    	</select>
+    	<br/>
+    	<label class="label">Attachments:</label>
+    	<br/>
+		<input type="file" id="myfile"name="myfile">
+		<hr>
+    	<input type="submit" value="Send">
+  	</form>
+</div>
+</body>
+</html>
